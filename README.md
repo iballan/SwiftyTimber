@@ -9,7 +9,7 @@
 `pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git"`
 
 #### Specific Version:
-`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.2"`
+`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.3"`
 
 
 ## USAGE
