@@ -8,8 +8,8 @@
 #### Latest Version:
 `pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git"`
 
-#### First Version:
-`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.1"`
+#### Specific Version:
+`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.2"`
 
 
 ## USAGE
