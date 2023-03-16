@@ -38,8 +38,14 @@ public class Timber {
     
     private var tree: TimberTree?
     
-    public func plantTree(_ tree: TimberTree) {
+    
+    @discardableResult
+    /// Plant tree that will be used for logging. Must implement TimberTree protocol
+    /// - Parameter tree: TimberTree
+    /// - Returns: self
+    public func plantTree(_ tree: TimberTree) -> Timber {
         self.tree = tree
+        return self
     }
     
     // MARK: Public methods

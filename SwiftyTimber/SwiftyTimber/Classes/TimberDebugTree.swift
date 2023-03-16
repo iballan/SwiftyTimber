@@ -31,6 +31,8 @@ public class TimberDebugTree: TimberTree {
     /// Default value is `yyyy-MM-dd HH:mm:ss`
     public var dateFormat = "yyyy-MM-dd HH:mm:ss"
     
+    public init() {}
+    
     private func getDateDescription() -> String {
         return dateFormatter.string(from: Date())
     }
