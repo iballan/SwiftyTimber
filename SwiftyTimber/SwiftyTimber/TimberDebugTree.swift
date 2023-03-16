@@ -5,7 +5,7 @@
 //  Created by mbh on 16/3/23.
 //
 
-public class DebugTree: TimberTree {
+public class TimberDebugTree: TimberTree {
     /// An array of level for the logger to print name.
     ///
     /// Default value is `Level.allCases`.
