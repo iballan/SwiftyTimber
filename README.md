@@ -1,6 +1,18 @@
 # SwiftyTimber
 
 
+## INSTALLATION
+
+### CocoaPods
+
+#### Latest Version:
+`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git"`
+
+#### First Version:
+`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.1"`
+
+
+## USAGE
 
 Example to plant a tree:
 ```
@@ -10,6 +22,8 @@ Timber.shared.plantTree(TimberDebugTree())
 Timber.shared.plantTree(TimberCrashlyticsTree())
 #endif
 ```
+
+## EXAMPLE
 
 Example to plant a tree for logging to Crashlytics
 ```
