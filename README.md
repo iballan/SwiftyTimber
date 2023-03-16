@@ -17,9 +17,9 @@
 Example to plant a tree:
 ```
 #if DEBUG
-Timber.shared.plantTree(TimberDebugTree())
+let timber = Timber.shared.plantTree(TimberDebugTree())
 #else
-Timber.shared.plantTree(TimberCrashlyticsTree())
+let timber = Timber.shared.plantTree(TimberCrashlyticsTree())
 #endif
 ```
 
