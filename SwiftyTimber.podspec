@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "SwiftyTimber"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Another Logging library inspired by Timber on Android"
   spec.description  = "Swift Logging Library, based on PureLogging and inspired by Timber on Android"
   spec.homepage     = "https://github.com/iballan/SwiftyTimber"
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files = "SwiftyTimber/SwiftyTimber/**/*.{swift}"
+  spec.source_files = "SwiftyTimber/SwiftyTimber/Classes/*.{swift}"
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 

@@ -77,11 +77,9 @@
 		30945B4929C38EB300633977 /* SwiftyTimber */ = {
 			isa = PBXGroup;
 			children = (
+				30945B6929C399F200633977 /* Classes */,
 				30945B4B29C38EB300633977 /* SwiftyTimber.docc */,
 				30945B4A29C38EB300633977 /* SwiftyTimber.h */,
-				30945B6129C38EFE00633977 /* Timber.swift */,
-				30945B6529C38F2D00633977 /* TimberTree.swift */,
-				30945B6729C38F4F00633977 /* TimberDebugTree.swift */,
 			);
 			path = SwiftyTimber;
 			sourceTree = "<group>";
@@ -92,6 +90,16 @@
 				30945B5629C38EB300633977 /* SwiftyTimberTests.swift */,
 			);
 			path = SwiftyTimberTests;
+			sourceTree = "<group>";
+		};
+		30945B6929C399F200633977 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				30945B6129C38EFE00633977 /* Timber.swift */,
+				30945B6529C38F2D00633977 /* TimberTree.swift */,
+				30945B6729C38F4F00633977 /* TimberDebugTree.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
