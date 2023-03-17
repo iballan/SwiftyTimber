@@ -19,7 +19,7 @@ OR
 ## USAGE
 
 Example to plant a tree:
-```
+```swift
 #if DEBUG
 Timber.shared.plantTree(TimberDebugTree())
 #else
@@ -30,14 +30,10 @@ Timber.shared.plantTree(TimberCrashlyticsTree())
 ## EXAMPLE
 
 Example to plant a tree for logging to Crashlytics
-```
+```swift
 import FirebaseCrashlytics
 
 public class TimberCrashlyticsTree: TimberTree {
-    public var shouldPrintLevelNameFor: [TimberLogLevel] = [.error]
-    
-    public var shouldPrintSystemInfoFor: [TimberLogLevel] = [.error]
-    
     public func print(_ item: Any, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
         guard level == .error else { return }
         let sourceName = getSourceFileName(filePath: filename)
