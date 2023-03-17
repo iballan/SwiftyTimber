@@ -6,6 +6,10 @@
 ### CocoaPods
 
 #### Latest Version:
+`pod 'SwiftyTimber'`
+
+OR
+
 `pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git"`
 
 #### Specific Version:
