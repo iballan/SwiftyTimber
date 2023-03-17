@@ -21,9 +21,9 @@ OR
 Example to plant a tree:
 ```
 #if DEBUG
-let timber = Timber.shared.plantTree(TimberDebugTree())
+Timber.shared.plantTree(TimberDebugTree())
 #else
-let timber = Timber.shared.plantTree(TimberCrashlyticsTree())
+Timber.shared.plantTree(TimberCrashlyticsTree())
 #endif
 ```
 
