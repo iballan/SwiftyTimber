@@ -1,5 +1,6 @@
 # SwiftyTimber
 
+SwiftyTimber is another Logging library inspired by [PureLogger](https://github.com/Kharauzov/PureLogger) and [Timber](https://github.com/JakeWharton/timber)
 
 ## INSTALLATION
 
