@@ -1,11 +1,16 @@
 # SwiftyTimber
 
+SwiftyTimber is another Logging library forked from [PureLogger](https://github.com/Kharauzov/PureLogger) and inspired by [Timber](https://github.com/JakeWharton/timber)
 
 ## INSTALLATION
 
 ### CocoaPods
 
 #### Latest Version:
+`pod 'SwiftyTimber'`
+
+OR
+
 `pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git"`
 
 #### Specific Version:
@@ -15,25 +20,21 @@
 ## USAGE
 
 Example to plant a tree:
-```
+```swift
 #if DEBUG
-let timber = Timber.shared.plantTree(TimberDebugTree())
+Timber.shared.plantTree(TimberDebugTree())
 #else
-let timber = Timber.shared.plantTree(TimberCrashlyticsTree())
+Timber.shared.plantTree(TimberCrashlyticsTree())
 #endif
 ```
 
 ## EXAMPLE
 
 Example to plant a tree for logging to Crashlytics
-```
+```swift
 import FirebaseCrashlytics
 
 public class TimberCrashlyticsTree: TimberTree {
-    public var shouldPrintLevelNameFor: [TimberLogLevel] = [.error]
-    
-    public var shouldPrintSystemInfoFor: [TimberLogLevel] = [.error]
-    
     public func print(_ item: Any, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
         guard level == .error else { return }
         let sourceName = getSourceFileName(filePath: filename)
