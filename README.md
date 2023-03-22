@@ -35,7 +35,7 @@ Example to plant a tree for logging to Crashlytics
 import FirebaseCrashlytics
 
 public class TimberCrashlyticsTree: TimberTree {
-    public func print(_ item: Any, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
+    public func print(_ message: String, _ error: Error?, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
         guard level == .error else { return }
         let sourceName = getSourceFileName(filePath: filename)
         let systemInfo = "[\(sourceName)]:\(line) \(funcName)"
@@ -49,8 +49,8 @@ public class TimberCrashlyticsTree: TimberTree {
             "message" : message
         ]
         Crashlytics.crashlytics().setCustomKeysAndValues(keysAndValues)
-        if item is Error {
-            Crashlytics.crashlytics().record(error: item as! Error)
+        if let error = error {
+            Crashlytics.crashlytics().record(error: error)
         } else {
             Crashlytics.crashlytics().record(exceptionModel: ExceptionModel(name: "\(sourceName)-\(funcName)", reason: message))
         }
