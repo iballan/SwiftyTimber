@@ -49,7 +49,7 @@ public class TimberDebugTree: TimberTree {
         return formatter
     }()
     
-    public func print(_ item: Any, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
+    public func print(_ message: String, error: Error?, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
 #if DEBUG
         var stringToPrint = ""
         if let level = level {
@@ -61,7 +61,12 @@ public class TimberDebugTree: TimberTree {
                 stringToPrint.append(systemInfo, withSeparator: true)
             }
         }
-        stringToPrint.append("\(item)", withSeparator: true)
+        if !message.isEmpty || error == nil {
+            stringToPrint.append(message, withSeparator: true)
+        }
+        if let error = error {
+            stringToPrint.append(String(describing: error), withSeparator: true)
+        }
         Swift.print(stringToPrint)
 #endif
     }

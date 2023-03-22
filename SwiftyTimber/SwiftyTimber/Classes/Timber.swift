@@ -60,32 +60,44 @@ public class Timber {
     }
     
     /// Prints item with additional information for **Level.debug** type.
-    public func debug(_ item: Any, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
-        print(item, level: .debug, filename: filename, line: line, column: column, funcName: funcName)
+    public func d(_ message: String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: nil, level: .debug, filename: filename, line: line, column: column, funcName: funcName)
+    }
+    public func d(_ error: Error, _ message: String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: error, level: .debug, filename: filename, line: line, column: column, funcName: funcName)
     }
     
     /// Prints item with additional information for **Level.info** type.
-    public func info(_ item: Any, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
-        print(item, level: .info, filename: filename, line: line, column: column, funcName: funcName)
+    public func i(_ message: String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: nil, level: .info, filename: filename, line: line, column: column, funcName: funcName)
+    }
+    public func i(_ error: Error, _ message: String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: error, level: .info, filename: filename, line: line, column: column, funcName: funcName)
     }
     
     /// Prints item with additional information for **Level.warning** type.
-    public func warning(_ item: Any, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
-        print(item, level: .warning, filename: filename, line: line, column: column, funcName: funcName)
+    public func w(_ message: String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: nil, level: .warning, filename: filename, line: line, column: column, funcName: funcName)
+    }
+    public func w(_ error: Error, _ message: String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: error, level: .warning, filename: filename, line: line, column: column, funcName: funcName)
     }
     
     /// Prints item with additional information for **Level.error** type.
-    public func error(_ item: Any, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
-        print(item, level: .error, filename: filename, line: line, column: column, funcName: funcName)
+    public func e(_ error: Error, _ message : String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: error, level: .error, filename: filename, line: line, column: column, funcName: funcName)
+    }
+    public func e(_ message : String, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        print(message, error: nil, level: .error, filename: filename, line: line, column: column, funcName: funcName)
     }
     
     /// Prints item itself without any additional information.
     public func none(_ item: Any, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
-        print(item, level: nil, filename: filename, line: line, column: column, funcName: funcName)
+        print("\(item)", error: nil, level: nil, filename: filename, line: line, column: column, funcName: funcName)
     }
     
     // MARK: Private methods
-    private func print(_ item: Any, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
-        tree?.print(item, level: level, filename: filename, line: line, column: column, funcName: funcName)
+    private func print(_ message: String, error: Error?, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
+        tree?.print(message, error: error, level: level, filename: filename, line: line, column: column, funcName: funcName)
     }
 }

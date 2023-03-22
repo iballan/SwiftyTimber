@@ -6,5 +6,5 @@
 //
 
 public protocol TimberTree {
-    func print(_ item: Any, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String)
+    func print(_ message: String, error: Error?, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String)
 }

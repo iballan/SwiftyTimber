@@ -14,6 +14,12 @@
 		30945B6229C38EFE00633977 /* Timber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30945B6129C38EFE00633977 /* Timber.swift */; };
 		30945B6629C38F2D00633977 /* TimberTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30945B6529C38F2D00633977 /* TimberTree.swift */; };
 		30945B6829C38F4F00633977 /* TimberDebugTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30945B6729C38F4F00633977 /* TimberDebugTree.swift */; };
+		30FD44F529CB52B500748AF2 /* SwiftyTimberExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD44F429CB52B500748AF2 /* SwiftyTimberExampleApp.swift */; };
+		30FD44F729CB52B500748AF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD44F629CB52B500748AF2 /* ContentView.swift */; };
+		30FD44F929CB52B700748AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FD44F829CB52B700748AF2 /* Assets.xcassets */; };
+		30FD44FC29CB52B700748AF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FD44FB29CB52B700748AF2 /* Preview Assets.xcassets */; };
+		30FD450329CB538700748AF2 /* SwiftyTimber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30945B4729C38EB300633977 /* SwiftyTimber.framework */; };
+		30FD450529CB57FF00748AF2 /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD450429CB57FF00748AF2 /* MyError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 		30945B6129C38EFE00633977 /* Timber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timber.swift; sourceTree = "<group>"; };
 		30945B6529C38F2D00633977 /* TimberTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimberTree.swift; sourceTree = "<group>"; };
 		30945B6729C38F4F00633977 /* TimberDebugTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimberDebugTree.swift; sourceTree = "<group>"; };
+		30FD44F229CB52B500748AF2 /* SwiftyTimberExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTimberExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30FD44F429CB52B500748AF2 /* SwiftyTimberExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTimberExampleApp.swift; sourceTree = "<group>"; };
+		30FD44F629CB52B500748AF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30FD44F829CB52B700748AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30FD44FB29CB52B700748AF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30FD450429CB57FF00748AF2 /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30FD44EF29CB52B500748AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FD450329CB538700748AF2 /* SwiftyTimber.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,7 +81,9 @@
 			children = (
 				30945B4929C38EB300633977 /* SwiftyTimber */,
 				30945B5529C38EB300633977 /* SwiftyTimberTests */,
+				30FD44F329CB52B500748AF2 /* SwiftyTimberExample */,
 				30945B4829C38EB300633977 /* Products */,
+				30FD450229CB538700748AF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +92,7 @@
 			children = (
 				30945B4729C38EB300633977 /* SwiftyTimber.framework */,
 				30945B5129C38EB300633977 /* SwiftyTimberTests.xctest */,
+				30FD44F229CB52B500748AF2 /* SwiftyTimberExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,10 +119,37 @@
 			isa = PBXGroup;
 			children = (
 				30945B6129C38EFE00633977 /* Timber.swift */,
-				30945B6529C38F2D00633977 /* TimberTree.swift */,
 				30945B6729C38F4F00633977 /* TimberDebugTree.swift */,
+				30945B6529C38F2D00633977 /* TimberTree.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		30FD44F329CB52B500748AF2 /* SwiftyTimberExample */ = {
+			isa = PBXGroup;
+			children = (
+				30FD44F629CB52B500748AF2 /* ContentView.swift */,
+				30FD450429CB57FF00748AF2 /* MyError.swift */,
+				30FD44F429CB52B500748AF2 /* SwiftyTimberExampleApp.swift */,
+				30FD44F829CB52B700748AF2 /* Assets.xcassets */,
+				30FD44FA29CB52B700748AF2 /* Preview Content */,
+			);
+			path = SwiftyTimberExample;
+			sourceTree = "<group>";
+		};
+		30FD44FA29CB52B700748AF2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30FD44FB29CB52B700748AF2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30FD450229CB538700748AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +202,23 @@
 			productReference = 30945B5129C38EB300633977 /* SwiftyTimberTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		30FD44F129CB52B500748AF2 /* SwiftyTimberExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30FD44FF29CB52B700748AF2 /* Build configuration list for PBXNativeTarget "SwiftyTimberExample" */;
+			buildPhases = (
+				30FD44EE29CB52B500748AF2 /* Sources */,
+				30FD44EF29CB52B500748AF2 /* Frameworks */,
+				30FD44F029CB52B500748AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyTimberExample;
+			productName = SwiftyTimberExample;
+			productReference = 30FD44F229CB52B500748AF2 /* SwiftyTimberExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +233,9 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					30945B5029C38EB300633977 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					30FD44F129CB52B500748AF2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -185,6 +255,7 @@
 			targets = (
 				30945B4629C38EB300633977 /* SwiftyTimber */,
 				30945B5029C38EB300633977 /* SwiftyTimberTests */,
+				30FD44F129CB52B500748AF2 /* SwiftyTimberExample */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +272,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30FD44F029CB52B500748AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FD44FC29CB52B700748AF2 /* Preview Assets.xcassets in Resources */,
+				30FD44F929CB52B700748AF2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +303,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				30945B5729C38EB300633977 /* SwiftyTimberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30FD44EE29CB52B500748AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FD450529CB57FF00748AF2 /* MyError.swift in Sources */,
+				30FD44F729CB52B500748AF2 /* ContentView.swift in Sources */,
+				30FD44F529CB52B500748AF2 /* SwiftyTimberExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +550,67 @@
 			};
 			name = Release;
 		};
+		30FD44FD29CB52B700748AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyTimberExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iballan.SwiftyTimberExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30FD44FE29CB52B700748AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyTimberExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iballan.SwiftyTimberExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -486,6 +637,15 @@
 			buildConfigurations = (
 				30945B5F29C38EB300633977 /* Debug */,
 				30945B6029C38EB300633977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30FD44FF29CB52B700748AF2 /* Build configuration list for PBXNativeTarget "SwiftyTimberExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30FD44FD29CB52B700748AF2 /* Debug */,
+				30FD44FE29CB52B700748AF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
