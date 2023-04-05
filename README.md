@@ -2,19 +2,34 @@
 
 SwiftyTimber is another Logging library forked from [PureLogger](https://github.com/Kharauzov/PureLogger) and inspired by [Timber](https://github.com/JakeWharton/timber)
 
+The main goals of this library are:
+* Log freely without worring about production
+* Easily read logged messages in the debug console
+* Log errors to Crashlytics (Or similar crash report system)
+
 ## INSTALLATION
 
 ### CocoaPods
 
-#### Latest Version:
+##### Latest Version:
 `pod 'SwiftyTimber'`
 
-OR
+##### OR
 
 `pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git"`
 
-#### Specific Version:
-`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.4"`
+##### Specific Version:
+`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.5"`
+
+### Swift Package Manager
+
+Once you have your Swift package set up, adding SwiftyTimber as a dependency is as easy as adding it to the dependencies value of your Package.swift.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/iballan/SwiftyTimber.git", .upToNextMajor(from: "0.0.5"))
+]
+```
 
 
 ## USAGE
