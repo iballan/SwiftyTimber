@@ -5,6 +5,8 @@
 //  Created by mbh on 16/3/23.
 //
 
+import Foundation
+
 public class TimberDebugTree: TimberTree {
     /// An array of level for the logger to print name.
     ///

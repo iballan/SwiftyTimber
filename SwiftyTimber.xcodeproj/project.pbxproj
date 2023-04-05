@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30945B4C29C38EB300633977 /* SwiftyTimber.docc in Sources */ = {isa = PBXBuildFile; fileRef = 30945B4B29C38EB300633977 /* SwiftyTimber.docc */; };
 		30945B5229C38EB300633977 /* SwiftyTimber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30945B4729C38EB300633977 /* SwiftyTimber.framework */; };
 		30945B5729C38EB300633977 /* SwiftyTimberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30945B5629C38EB300633977 /* SwiftyTimberTests.swift */; };
-		30945B5829C38EB300633977 /* SwiftyTimber.h in Headers */ = {isa = PBXBuildFile; fileRef = 30945B4A29C38EB300633977 /* SwiftyTimber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30945B6229C38EFE00633977 /* Timber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30945B6129C38EFE00633977 /* Timber.swift */; };
 		30945B6629C38F2D00633977 /* TimberTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30945B6529C38F2D00633977 /* TimberTree.swift */; };
 		30945B6829C38F4F00633977 /* TimberDebugTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30945B6729C38F4F00633977 /* TimberDebugTree.swift */; };
@@ -34,13 +32,12 @@
 
 /* Begin PBXFileReference section */
 		30945B4729C38EB300633977 /* SwiftyTimber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyTimber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30945B4A29C38EB300633977 /* SwiftyTimber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyTimber.h; sourceTree = "<group>"; };
-		30945B4B29C38EB300633977 /* SwiftyTimber.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyTimber.docc; sourceTree = "<group>"; };
 		30945B5129C38EB300633977 /* SwiftyTimberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTimberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30945B5629C38EB300633977 /* SwiftyTimberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTimberTests.swift; sourceTree = "<group>"; };
 		30945B6129C38EFE00633977 /* Timber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timber.swift; sourceTree = "<group>"; };
 		30945B6529C38F2D00633977 /* TimberTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimberTree.swift; sourceTree = "<group>"; };
 		30945B6729C38F4F00633977 /* TimberDebugTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimberDebugTree.swift; sourceTree = "<group>"; };
+		30C5786D29DE06FE003F2181 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		30FD44F229CB52B500748AF2 /* SwiftyTimberExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTimberExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FD44F429CB52B500748AF2 /* SwiftyTimberExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTimberExampleApp.swift; sourceTree = "<group>"; };
 		30FD44F629CB52B500748AF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,8 +76,8 @@
 		30945B3D29C38EB300633977 = {
 			isa = PBXGroup;
 			children = (
+				30C5786D29DE06FE003F2181 /* Package.swift */,
 				30C5786729DE03A1003F2181 /* Sources */,
-				30945B4929C38EB300633977 /* SwiftyTimber */,
 				30945B5529C38EB300633977 /* SwiftyTimberTests */,
 				30FD44F329CB52B500748AF2 /* SwiftyTimberExample */,
 				30945B4829C38EB300633977 /* Products */,
@@ -96,15 +93,6 @@
 				30FD44F229CB52B500748AF2 /* SwiftyTimberExample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		30945B4929C38EB300633977 /* SwiftyTimber */ = {
-			isa = PBXGroup;
-			children = (
-				30945B4B29C38EB300633977 /* SwiftyTimber.docc */,
-				30945B4A29C38EB300633977 /* SwiftyTimber.h */,
-			);
-			path = SwiftyTimber;
 			sourceTree = "<group>";
 		};
 		30945B5529C38EB300633977 /* SwiftyTimberTests */ = {
@@ -167,7 +155,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30945B5829C38EB300633977 /* SwiftyTimber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +289,6 @@
 				30945B6629C38F2D00633977 /* TimberTree.swift in Sources */,
 				30945B6229C38EFE00633977 /* Timber.swift in Sources */,
 				30945B6829C38F4F00633977 /* TimberDebugTree.swift in Sources */,
-				30945B4C29C38EB300633977 /* SwiftyTimber.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
