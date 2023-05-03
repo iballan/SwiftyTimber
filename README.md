@@ -36,13 +36,35 @@ dependencies: [
 
 Example to plant a tree:
 ```swift
+// Static methods
+#import SwiftyTimber
 #if DEBUG
 Timber.shared.plantTree(TimberDebugTree())
 #else
 Timber.shared.plantTree(TimberCrashlyticsTree())
 #endif
-```
 
+// Then in your code
+#import SwiftyTimber
+Timber.i("This is info log")
+Timber.d("This is debug log")
+Timber.e("This is error log", error)
+```
+### Or what I prefer:
+
+```swift
+#import SwiftyTimber
+#if DEBUG
+let logger = Timber.shared.plantTree(TimberDebugTree())
+#else
+let logger = Timber.shared.plantTree(TimberCrashlyticsTree())
+#endif
+
+// Then in your code
+logger.i("This is info log")
+logger.d("This is debug log")
+logger.e("This is error log", error)
+```
 ## EXAMPLE
 
 Example to plant a tree for logging to Crashlytics
