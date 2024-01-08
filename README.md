@@ -19,7 +19,7 @@ The main goals of this library are:
 `pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git"`
 
 ##### Specific Version:
-`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.0.5"`
+`pod 'SwiftyTimber', :git => "https://github.com/iballan/SwiftyTimber.git", :tag => "0.1.0"`
 
 ### Swift Package Manager
 
@@ -27,7 +27,7 @@ Once you have your Swift package set up, adding SwiftyTimber as a dependency is 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/iballan/SwiftyTimber.git", .upToNextMajor(from: "0.0.5"))
+    .package(url: "https://github.com/iballan/SwiftyTimber.git", .upToNextMajor(from: "0.1.0"))
 ]
 ```
 
@@ -39,9 +39,9 @@ Example to plant a tree:
 // Static methods
 #import SwiftyTimber
 #if DEBUG
-Timber.shared.plantTree(TimberDebugTree())
+Timber.shared.plant(TimberDebugTree())
 #else
-Timber.shared.plantTree(TimberCrashlyticsTree())
+Timber.shared.plant(TimberCrashlyticsTree())
 #endif
 
 // Then in your code
@@ -55,9 +55,9 @@ Timber.e("This is error log", error)
 ```swift
 #import SwiftyTimber
 #if DEBUG
-let logger = Timber.shared.plantTree(TimberDebugTree())
+let logger = Timber.shared.plant(TimberDebugTree())
 #else
-let logger = Timber.shared.plantTree(TimberCrashlyticsTree())
+let logger = Timber.shared.plant(TimberCrashlyticsTree()).plant(AnotherTree())
 #endif
 
 // Then in your code
