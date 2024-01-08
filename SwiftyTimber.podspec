@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "SwiftyTimber"
-  spec.version      = "0.0.6"
+  spec.version      = "0.1.0"
   spec.summary      = "Another Logging library inspired by Timber on Android"
   spec.description  = "Swift Logging Library, based on PureLogging and inspired by Timber on Android"
   spec.homepage     = "https://github.com/iballan/SwiftyTimber"

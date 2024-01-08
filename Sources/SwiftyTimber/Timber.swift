@@ -36,15 +36,15 @@ public class Timber {
     /// For local usage please create a separate instance of the logger.
     public static var shared = Timber()
     
-    private var tree: TimberTree?
+    private var forest: [TimberTree] = []
     
     
     @discardableResult
     /// Plant tree that will be used for logging. Must implement TimberTree protocol
     /// - Parameter tree: TimberTree
     /// - Returns: self
-    public func plantTree(_ tree: TimberTree) -> Timber {
-        self.tree = tree
+    public func plant(_ tree: TimberTree) -> Timber {
+        forest.append(tree)
         return self
     }
     
@@ -98,6 +98,8 @@ public class Timber {
     
     // MARK: Private methods
     private func print(_ message: String, error: Error?, level: TimberLogLevel?, filename: String, line: Int, column: Int, funcName: String) {
-        tree?.print(message, error: error, level: level, filename: filename, line: line, column: column, funcName: funcName)
+        forest.forEach { tree in
+            tree.print(message, error: error, level: level, filename: filename, line: line, column: column, funcName: funcName)
+        }
     }
 }
