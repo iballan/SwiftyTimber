@@ -10,7 +10,7 @@ import SwiftyTimber
 
 #if DEBUG
 // Not necessary to assign Timber to a variable, i just did it for example
-let logger = Timber.shared.plantTree(TimberDebugTree())
+let logger = Timber.shared.plant(TimberDebugTree())
 #endif
 // Here you may plant different tree
 
